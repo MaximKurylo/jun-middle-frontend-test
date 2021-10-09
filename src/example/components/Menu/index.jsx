@@ -6,6 +6,7 @@ import EllipseSvg from '../../assets/ellipse'
 import menuList from './menuList'
 import  './styles.css'
 import MenuHeader from './MenuHeader'
+import Union from '../../assets/union'
 
 
 const Menu = () => {
@@ -28,7 +29,7 @@ const Menu = () => {
                     key={name}
                     defaultCollapsed={true}>
                     <div className="info" > <EllipseSvg />{age}</div>
-                    <div className="info" > <EllipseSvg />{ages}<h2>⫰⫯</h2></div>
+                    <div className="info" > <EllipseSvg />{ages}<Union /></div>
 
                   </TreeView>
                 )
@@ -42,3 +43,5 @@ const Menu = () => {
 }
 
 export default Menu
+
+

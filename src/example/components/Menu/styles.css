@@ -1,5 +1,3 @@
-
-
 h3 {
   font-family: Inter;
   font-style: normal;
@@ -66,17 +64,5 @@ h4 {
   color: darkgray;
 }
 
-h2 {
-  position: absolute;
-  right: 20px;
-  top: 123px;
-  color: black;
-  font-size: 20px;
-  margin: 0;
-  padding: 0;
-}
 
-h2:hover {
-  background: silver;
-  cursor: pointer;
-}
+

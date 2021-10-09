@@ -12,7 +12,7 @@ const menuList = [
       {
         name: "Subfolder2",
         age: ".79, 0, .43, 1.04" ,
-        ages: ".55, 0, .15, 1",
+        ages: ".55, 0",
         collapsed: false
       },
     ],
