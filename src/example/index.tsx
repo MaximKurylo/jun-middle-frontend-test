@@ -1,7 +1,8 @@
 import * as React from 'react'
-import BoxMenu from './components/Tree/Box/BoxMenu'
+import Menu from './components/Menu'
+import Paper from './components/Paper'
 
 export interface IProps {}
-export const Example: React.FC<IProps> = () => <div>
-  <BoxMenu />
-</div>
+export const Example: React.FC<IProps> = () => <Paper>
+  <Menu />
+</Paper>

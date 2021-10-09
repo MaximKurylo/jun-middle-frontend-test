@@ -1,17 +1,18 @@
-import menuList from './menuList'
 import TreeView from 'react-treeview'
-import EllipseSvg from '../../../assets/ellipse'
 import React from 'react'
+import "react-treeview/react-treeview.css"
 
-const Box = () => {
+import EllipseSvg from '../../assets/ellipse'
+import menuList from './menuList'
+import  './styles.css'
+import MenuHeader from './MenuHeader'
+
+
+const Menu = () => {
+
   return (
-    <div className="box" >
-      <div className="container" >
-        <div className="header">
-          <h3>Saved graphs</h3>
-          <span className='plus'>+</span>
-        </div>
-
+    <>
+      <MenuHeader/>
         {menuList.map((node, i) => {
           const type = node.type
           const label = <span className="node">{type}</span>
@@ -35,9 +36,9 @@ const Box = () => {
             </TreeView>
           )
         })}
-      </div>
-    </div>
+      </>
+
   )
 }
 
-export default Box
+export default Menu
