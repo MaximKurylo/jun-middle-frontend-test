@@ -21,7 +21,7 @@ const Menu = () => {
               key={`${type}${i}`}
               nodeLabel={label}
               defaultCollapsed={true}>
-              {node.folder.map(({ name, age, ages, role }) => {
+              {node.folder.map(({ name, age, ages, }) => {
                 return (
                   <TreeView
                     nodeLabel={ <span className="node">{name}</span>}
@@ -29,7 +29,7 @@ const Menu = () => {
                     defaultCollapsed={true}>
                     <div className="info" > <EllipseSvg />{age}</div>
                     <div className="info" > <EllipseSvg />{ages}<h2>⫰⫯</h2></div>
-                    <div className="info" >{role}</div>
+
                   </TreeView>
                 )
               })}
