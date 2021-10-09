@@ -13,9 +13,10 @@ module.exports = {
     // 'PRODUCTION' is used when building the static version of storybook.
 
     config.module.rules.push({
-      test: /\.s[ac]ss$/i,
+      test: [/\.s[ac]ss$/i, /\.svg$/],
       use: [
         { loader: 'style-loader' },
+        { loader: 'file-loader' },
         {
           loader: 'css-loader',
           options: {
@@ -28,6 +29,8 @@ module.exports = {
       ],
       include: path.resolve(__dirname, '../'),
     })
+
+
 
     config.resolve.extensions = ['.tsx', '.ts', '.jsx', '.js']
 

@@ -1,6 +1,6 @@
 import { Story, Meta } from '@storybook/react'
 import React from 'react'
-
+import './components/Tree/Box/styles.css'
 import { Example, IProps } from '.'
 
 export default {
